@@ -1,3 +1,15 @@
 @import "bootstrap";
 @import "font-awesome";
+@import "slider";
 @import "fullcalendar";
+
+.btn-default {
+
+  margin: 10px;
+  padding: 5px;
+}
+
+#slider-range-min {
+
+  width: 500px;
+}

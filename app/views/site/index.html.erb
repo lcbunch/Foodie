@@ -1,7 +1,6 @@
 <h1>World of Noms</h1>
 <p>Create your own list of noms and tells us if they're delicious or not! Go on, don't be shy.</p>
 
-</div>
 
 <p>
   <label for="amount">Maximum price:</label>
@@ -13,8 +12,13 @@
 </div>
 
 <a href="#hello" data-toggle="modal" class="btn btn-default">HELLO</a>
-
+<a href="#create-event" data-toggle="modal" class="btn btn-success">Create Event</a>
+<%= render('events/new_modal') %>
 <div id="calendar">
+</div>
+
+<div id="restaurants">
+</div>
 
 <div id="hello" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="hello-modal-label" aria-hidden="true">
   <div class="modal-dialog">

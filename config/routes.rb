@@ -11,7 +11,11 @@ Rails.application.routes.draw do
 
   get 'site/create'
 
+resources :events
+
 root 'site#index'
+
+get '/places' => 'site#places'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

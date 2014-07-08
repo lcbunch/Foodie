@@ -67,7 +67,7 @@ class RestaurantsController < ApplicationController
       @restaurant = Restaurant.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
+    # Never trust parameters from the scary internet, only allow the white list through.s
     def restaurant_params
       params.require(:restaurant).permit(:name, :address)
     end

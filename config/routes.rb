@@ -14,10 +14,12 @@ Rails.application.routes.draw do
 resources :events
 
 root 'site#index'
-
+get '/contact' => 'site#contact'
+post '/contact' => 'site#contact'
 get '/places' => 'site#places'
 
-
+get '/login' => 'site#login'
+get '/report' => 'site#report'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

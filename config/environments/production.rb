@@ -82,10 +82,10 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_setting = {
-    address: '',
+  config.action_mailer.smtp_settings = {
+    address: 'smtp.mandrillapp.com',
     port:     587,
-    domain: 'http://floating-oasis-7973.herokuapp.com/',
+    domain: 'floating-oasis-7973.herokuapp.com/',
     user_name: ENV['MANDRILL_USERNAME'],
     password: ENV['MANDRILL_APIKEY'],
     authentication: 'plain',
